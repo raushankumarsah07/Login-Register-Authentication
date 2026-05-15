@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b1aeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 3rem;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+.signin-form{
+    background-color: #fff;
+    padding: 20px;
+    border: 3px dashed black;
+}
