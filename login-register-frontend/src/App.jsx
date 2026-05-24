@@ -1,18 +1,16 @@
-import Signin from "./components/signin";
+import Home from "./components/Home";
+import Login from "./components/Login";
 import Signup from "./components/signup";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <nav>
-        <Link to="/Signup">Register</Link>
-        <Link to="/Signin">Log in</Link>
-      </nav>
       <Routes>
-        <Route path="/Signin" element={<Signin />} />
-        <Route path="/Signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
       </BrowserRouter>
     </>
@@ -20,3 +18,4 @@ function App() {
 }
 
 export default App;
+
